@@ -2469,3 +2469,12 @@ fireStyle.textContent = `
 
 </body>
 </html>
+<script>
+  // 🔓 Directly show next interface when cake is clicked (no password)
+  function goToMainContent() {
+    document.getElementById("cake-interface").style.display = "none";
+    showBirthdayNoteThenMain();
+    const music = document.getElementById("bgMusic");
+    if (music) music.play().catch(() => {});
+  }
+</script>
